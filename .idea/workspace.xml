@@ -24,11 +24,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6ea0bde-c8f3-4a61-a067-c64fa073e2ad" name="Default Changelist" comment="admin_add_appointment.html updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HMS/HMS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/HMS/HMS/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HMS/Hospital/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HMS/Hospital/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="f6ea0bde-c8f3-4a61-a067-c64fa073e2ad" name="Default Changelist" comment="admin html files Updated" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -267,7 +263,35 @@
       <option name="project" value="LOCAL" />
       <updated>1601072901170</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="views.py Updated">
+      <created>1601073492413</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1601073492413</updated>
+    </task>
+    <task id="LOCAL-00024" summary="urls.py Updated">
+      <created>1601073526213</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1601073526213</updated>
+    </task>
+    <task id="LOCAL-00025" summary="urls.py Updated">
+      <created>1601073544745</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1601073544745</updated>
+    </task>
+    <task id="LOCAL-00026" summary="admin html files Updated">
+      <created>1601073586214</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1601073586214</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -339,7 +363,10 @@
     <MESSAGE value="Updated index.html" />
     <MESSAGE value="Updated" />
     <MESSAGE value="admin_add_appointment.html updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin_add_appointment.html updated" />
+    <MESSAGE value="views.py Updated" />
+    <MESSAGE value="urls.py Updated" />
+    <MESSAGE value="admin html files Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin html files Updated" />
     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -395,14 +422,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599502008282" />
-    <state x="115" y="139" key="Vcs.Push.Dialog.v2" timestamp="1601072910982">
+    <state x="115" y="139" key="Vcs.Push.Dialog.v2" timestamp="1601073591279">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="115" y="139" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601072910982" />
-    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601073428257">
+    <state x="115" y="139" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601073591279" />
+    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601073895204">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1601073428257" />
+    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1601073895204" />
     <state x="397" y="77" key="git4idea.branch.GitSmartOperationDialog" timestamp="1601041074067">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
