@@ -20,16 +20,11 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/Arshad" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6ea0bde-c8f3-4a61-a067-c64fa073e2ad" name="Default Changelist" comment="Updated admin_base.html">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HMS/template/hospital/admin_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/HMS/template/hospital/admin_base.html" afterDir="false" />
-    </list>
+    <list default="true" id="f6ea0bde-c8f3-4a61-a067-c64fa073e2ad" name="Default Changelist" comment="Updated admin_base.html" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -212,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601051386337</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Updated admin_base.html">
+      <created>1601062225299</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1601062225500</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -234,17 +236,6 @@
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
                   <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/Arshad" />
-                      </list>
-                    </value>
-                  </entry>
                 </map>
               </option>
             </State>
@@ -347,10 +338,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599502008282" />
-    <state x="115" y="139" key="Vcs.Push.Dialog.v2" timestamp="1601051420439">
+    <state x="115" y="139" key="Vcs.Push.Dialog.v2" timestamp="1601062235451">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="115" y="139" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601051420439" />
+    <state x="115" y="139" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601062235451" />
     <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601062183064">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
