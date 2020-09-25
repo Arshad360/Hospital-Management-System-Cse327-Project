@@ -1,0 +1,132 @@
+Index: HMS/Hospital/views.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from django.http import HttpResponseRedirect\r\nfrom django.shortcuts import render\r\n\r\n# Create your views here.\r\n\r\n\r\ndef home_view(request):\r\n    if request.user.is_authenticated:\r\n        return HttpResponseRedirect('afterlogin')\r\n    return render(request, 'hospital/index.html')
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HMS/Hospital/views.py	(revision 4c4ad0124d9d54985a3b95a60025bb54548da43d)
++++ HMS/Hospital/views.py	(date 1600980974781)
+@@ -1,10 +1,11 @@
+ from django.http import HttpResponseRedirect
+ from django.shortcuts import render
+ 
++
+ # Create your views here.
+ 
+ 
+ def home_view(request):
+     if request.user.is_authenticated:
+-        return HttpResponseRedirect('afterlogin')
+-    return render(request, 'hospital/index.html')
+\ No newline at end of file
++        return HttpResponseRedirect('')
++    return render(request, 'hospital/index.html')
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"BranchesTreeState\">\r\n    <expand>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </expand>\r\n    <select>\r\n      <path>\r\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\r\n      </path>\r\n    </select>\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f6ea0bde-c8f3-4a61-a067-c64fa073e2ad\" name=\"Default Changelist\" comment=\"Update urls.py\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <excluded-from-favorite>\r\n      <branch-storage>\r\n        <map>\r\n          <entry type=\"LOCAL\">\r\n            <value>\r\n              <list>\r\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"master\" />\r\n              </list>\r\n            </value>\r\n          </entry>\r\n          <entry type=\"REMOTE\">\r\n            <value>\r\n              <list>\r\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"origin/master\" />\r\n              </list>\r\n            </value>\r\n          </entry>\r\n        </map>\r\n      </branch-storage>\r\n    </excluded-from-favorite>\r\n    <favorite-branches>\r\n      <branch-storage>\r\n        <map>\r\n          <entry type=\"REMOTE\">\r\n            <value>\r\n              <list>\r\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"origin/Arshadul\" />\r\n              </list>\r\n            </value>\r\n          </entry>\r\n        </map>\r\n      </branch-storage>\r\n    </favorite-branches>\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"Arshad\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"hiddenUrls\">\r\n      <set>\r\n        <option value=\"https://github.com/Arshad360/Hospital-Management-System-Cse327-Project.git\" />\r\n      </set>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1h8DSpzetD2WREppe4sBXZnbX2W\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\r\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"TERMINAL_CUSTOM_COMMANDS_GOT_IT\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/HMS\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"org.jetbrains.plugins.github.ui.GithubSettingsConfigurable\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f6ea0bde-c8f3-4a61-a067-c64fa073e2ad\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1599383827327</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1599383827327</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\">\r\n      <created>1599501989703</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1599501989703</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"this is test\">\r\n      <created>1599503325697</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1599503325697</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Update\">\r\n      <created>1600203635495</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600203635495</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"1 line\">\r\n      <created>1600204311460</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600204311460</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Update\">\r\n      <created>1600976671782</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600976671902</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Update\">\r\n      <created>1600977069124</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600977069125</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Update urls.py\">\r\n      <created>1600978819387</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1600978819387</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"8\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.History.Properties\">\r\n    <option name=\"COLUMN_ORDER\">\r\n      <list>\r\n        <option value=\"0\" />\r\n        <option value=\"2\" />\r\n        <option value=\"3\" />\r\n        <option value=\"1\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"CUSTOM_BOOLEAN_PROPERTIES\">\r\n                <map>\r\n                  <entry key=\"Show.Git.Branches\" value=\"true\" />\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_FILTERS\">\r\n      <map>\r\n        <entry key=\"Branch\">\r\n          <value>\r\n            <list>\r\n              <RecentGroup>\r\n                <option name=\"FILTER_VALUES\">\r\n                  <option value=\"origin/Arshad\" />\r\n                </option>\r\n              </RecentGroup>\r\n              <RecentGroup>\r\n                <option name=\"FILTER_VALUES\">\r\n                  <option value=\"master\" />\r\n                </option>\r\n              </RecentGroup>\r\n              <RecentGroup>\r\n                <option name=\"FILTER_VALUES\">\r\n                  <option value=\"origin/x\" />\r\n                </option>\r\n              </RecentGroup>\r\n            </list>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Delete HMS Use Case Diagram(Final).jpeg\" />\r\n    <MESSAGE value=\"this is test\" />\r\n    <MESSAGE value=\"1 line\" />\r\n    <MESSAGE value=\"Update\" />\r\n    <MESSAGE value=\"Update urls.py\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update urls.py\" />\r\n    <option name=\"PRESELECT_EXISTING_CHANGELIST\" value=\"true\" />\r\n  </component>\r\n  <component name=\"WindowStateProjectService\">\r\n    <state x=\"421\" y=\"188\" key=\"#Notifications\" timestamp=\"1600813467881\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"421\" y=\"188\" key=\"#Notifications/0.0.1366.728@0.0.1366.728\" timestamp=\"1600813467881\" />\r\n    <state x=\"0\" y=\"22\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1600030024003\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"0\" y=\"22\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728\" timestamp=\"1600030024003\" />\r\n    <state x=\"447\" y=\"166\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1600972627394\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"447\" y=\"166\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728\" timestamp=\"1600972627394\" />\r\n    <state x=\"0\" y=\"97\" width=\"1092\" height=\"610\" key=\"DiffContextDialog\" timestamp=\"1600977297361\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"0\" y=\"97\" width=\"1092\" height=\"610\" key=\"DiffContextDialog/0.0.1366.728@0.0.1366.728\" timestamp=\"1600977297361\" />\r\n    <state x=\"303\" y=\"161\" key=\"FileChooserDialogImpl\" timestamp=\"1600884614391\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"303\" y=\"161\" key=\"FileChooserDialogImpl/0.0.1366.728@0.0.1366.728\" timestamp=\"1600884614391\" />\r\n    <state x=\"491\" y=\"248\" key=\"Github.CreateGistDialog\" timestamp=\"1599504861567\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"491\" y=\"248\" key=\"Github.CreateGistDialog/0.0.1366.728@0.0.1366.728\" timestamp=\"1599504861567\" />\r\n    <state x=\"129\" y=\"55\" key=\"MergeDialog\" timestamp=\"1600977757475\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"129\" y=\"55\" key=\"MergeDialog/0.0.1366.728@0.0.1366.728\" timestamp=\"1600977757475\" />\r\n    <state x=\"321\" y=\"125\" key=\"MultipleFileMergeDialog\" timestamp=\"1600977757545\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"321\" y=\"125\" key=\"MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728\" timestamp=\"1600977757545\" />\r\n    <state x=\"211\" y=\"108\" key=\"RollbackChangesDialog\" timestamp=\"1600204027040\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"211\" y=\"108\" key=\"RollbackChangesDialog/0.0.1366.728@0.0.1366.728\" timestamp=\"1600204027040\" />\r\n    <state x=\"24\" y=\"18\" key=\"SettingsEditor\" timestamp=\"1600884276807\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"24\" y=\"18\" key=\"SettingsEditor/0.0.1366.728@0.0.1366.728\" timestamp=\"1600884276807\" />\r\n    <state x=\"530\" y=\"278\" key=\"VCS.ChangelistChooser\" timestamp=\"1600977025147\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"530\" y=\"278\" key=\"VCS.ChangelistChooser/0.0.1366.728@0.0.1366.728\" timestamp=\"1600977025147\" />\r\n    <state x=\"513\" y=\"233\" key=\"VCS.EditChangelistDialog\" timestamp=\"1599502008282\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"513\" y=\"233\" key=\"VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728\" timestamp=\"1599502008282\" />\r\n    <state x=\"115\" y=\"139\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1600980041886\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"115\" y=\"139\" key=\"Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728\" timestamp=\"1600980041886\" />\r\n    <state x=\"492\" y=\"278\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2\" timestamp=\"1600980784387\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"492\" y=\"278\" key=\"com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728\" timestamp=\"1600980784387\" />\r\n    <state x=\"147\" y=\"194\" key=\"git4idea.merge.GitPullDialog\" timestamp=\"1599509856402\">\r\n      <screen x=\"0\" y=\"0\" width=\"1366\" height=\"728\" />\r\n    </state>\r\n    <state x=\"147\" y=\"194\" key=\"git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728\" timestamp=\"1599509856402\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 4c4ad0124d9d54985a3b95a60025bb54548da43d)
++++ .idea/workspace.xml	(date 1600981086088)
+@@ -10,22 +10,19 @@
+         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+       </path>
+-      <path>
+-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+-      </path>
+     </expand>
+     <select>
+       <path>
+         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="BRANCH:Arshad" type="e8cecc67:BranchNodeDescriptor" />
+       </path>
+     </select>
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f6ea0bde-c8f3-4a61-a067-c64fa073e2ad" name="Default Changelist" comment="Update urls.py" />
++    <list default="true" id="f6ea0bde-c8f3-4a61-a067-c64fa073e2ad" name="Default Changelist" comment="Update views.py">
++      <change beforePath="$PROJECT_DIR$/HMS/Hospital/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/HMS/Hospital/views.py" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -43,13 +40,6 @@
+     <excluded-from-favorite>
+       <branch-storage>
+         <map>
+-          <entry type="LOCAL">
+-            <value>
+-              <list>
+-                <branch-info repo="$PROJECT_DIR$" source="master" />
+-              </list>
+-            </value>
+-          </entry>
+           <entry type="REMOTE">
+             <value>
+               <list>
+@@ -166,7 +156,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1600978819387</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="Update views.py">
++      <created>1600980797905</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1600980797905</updated>
++    </task>
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.History.Properties">
+@@ -190,6 +187,17 @@
+                   <entry key="Show.Git.Branches" value="true" />
+                 </map>
+               </option>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="Arshad" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
+             </State>
+           </value>
+         </entry>
+@@ -228,7 +236,8 @@
+     <MESSAGE value="1 line" />
+     <MESSAGE value="Update" />
+     <MESSAGE value="Update urls.py" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Update urls.py" />
++    <MESSAGE value="Update views.py" />
++    <option name="LAST_COMMIT_MESSAGE" value="Update views.py" />
+     <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
+   </component>
+   <component name="WindowStateProjectService">
+@@ -284,10 +293,10 @@
+       <screen x="0" y="0" width="1366" height="728" />
+     </state>
+     <state x="115" y="139" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600980041886" />
+-    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600980784387">
++    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600981086044">
+       <screen x="0" y="0" width="1366" height="728" />
+     </state>
+-    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1600980784387" />
++    <state x="492" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1600981086044" />
+     <state x="147" y="194" key="git4idea.merge.GitPullDialog" timestamp="1599509856402">
+       <screen x="0" y="0" width="1366" height="728" />
+     </state>
