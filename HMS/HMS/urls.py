@@ -35,6 +35,7 @@ urlpatterns = [
     path('admin-add-patient', admin_add_patient_view, name='admin-add-patient'),
     path('admin-appointment', admin_appointment_view, name='admin-appointment'),
     path('adminclick', adminclick_view),
+    path('afterlogin', afterlogin_view, name='afterlogin'),
     path('contactus', contactus_view),
 
 ]
