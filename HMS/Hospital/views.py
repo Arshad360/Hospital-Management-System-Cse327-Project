@@ -1,3 +1,5 @@
+from django.conf.global_settings import EMAIL_HOST_USER
+from django.core.mail import send_mail
 from django.shortcuts import render
 from . import forms, models
 from django.db.models import Sum
@@ -33,3 +35,21 @@ def admin_patient_view(request):
 
 def admin_appointment_view(request):
     return render(request, 'hospital/admin_appointment.html')
+
+
+# for contact us
+
+
+def contactus_view(request):
+    sub = forms.ContactusForm()
+    if request.method == 'POST':
+        sub = forms.ContactusForm(request.POST)
+        if sub.is_valid():
+            email = sub.cleaned_data['Email']
+            name = sub.cleaned_data['Name']
+            message = sub.cleaned_data['Message']
+            send_mail(str(name) + ' || ' + str(email), message,
+                      EMAIL_HOST_USER, ['wapka1503@gmail.com'],
+                      fail_silently=False)
+            return render(request, 'hospital/contactussuccess.html')
+    return render(request, 'hospital/contactus.html', {'form': sub})
