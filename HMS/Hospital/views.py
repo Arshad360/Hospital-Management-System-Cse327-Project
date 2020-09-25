@@ -1,6 +1,6 @@
 from django.conf.global_settings import EMAIL_HOST_USER
 from django.core.mail import send_mail
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from . import forms, models
 from django.db.models import Sum
 from django.contrib.auth.models import Group
@@ -82,6 +82,12 @@ def admin_add_patient_view(request):
 
         return HttpResponseRedirect('admin-view-patient')
     return render(request, 'hospital/admin_add_patient.html', context=my_dict)
+
+# after successful login
+
+
+def afterlogin_view(request):
+    return render(request, 'hospital/admin-dashboard.html')
 
 
 # for contact us
