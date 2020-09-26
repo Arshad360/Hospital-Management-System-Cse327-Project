@@ -13,6 +13,7 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 def test(request):
     return render(request, 'hospital/admin_base.html')
 
+
 # for checking is user is admin
 
 
@@ -27,6 +28,7 @@ def afterlogin_view(request):
     if is_admin(request.user):
         return redirect('admin-dashboard')
 
+
 # Create your views here.
 
 
@@ -37,12 +39,11 @@ def home_view(request):
     return render(request, 'hospital/index.html')
 
 
-
-
 def adminclick_view(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('afterlogin')
     return render(request, 'hospital/adminclick.html')
+
 
 # for signup/login button for admin
 
@@ -62,27 +63,30 @@ def admin_signup_view(request):
 
 # Admin Related Views Start
 
+
 # Dashboard page view for admin
 
 def admin_dashboard_view(request):
     return render(request, 'hospital/admin_dashboard.html')
+
 
 # Checking the doctor for admin
 
 def admin_doctor_view(request):
     return render(request, 'hospital/admin_doctor.html')
 
+
 # patient view for admin
 
 def admin_patient_view(request):
     return render(request, 'hospital/admin_patient.html')
 
+
 # Appointment view for the admin
 
-def admin_appointment_view(request):
-    return render(request, 'hospital/admin_appointment.html')
 
 # Adding patient view by admin
+
 
 def admin_add_patient_view(request):
     user_form = forms.PatientUserForm()
@@ -143,6 +147,14 @@ def admin_add_appointment_view(request):
             appointment.save()
         return HttpResponseRedirect('admin-view-appointment')
     return render(request, 'hospital/admin_add_appointment.html', context=mydict)
+
+
+# for Ambulance Services
+
+def ambulance(request):
+    if request.user.is_authenticated:
+        return HttpResponseRedirect('ambulance')
+    return render(request, 'template/ambulance.html')
 
 
 # for contact us

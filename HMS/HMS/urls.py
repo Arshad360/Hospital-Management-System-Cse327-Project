@@ -36,6 +36,7 @@ urlpatterns = [
     path('admin-appointment', admin_appointment_view, name='admin-appointment'),
     path('adminclick', adminclick_view),
     path('afterlogin', afterlogin_view, name='afterlogin'),
+    path(),
     path('contactus', contactus_view),
 
 ]

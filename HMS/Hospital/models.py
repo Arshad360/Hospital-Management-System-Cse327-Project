@@ -16,9 +16,10 @@ departments = [('Cardiologist', 'Cardiologist'),
 
 # Defines of the Appointment Class
 
+
 class Appointment(models.Model):
     # Gets the patientId
-    patientId models.PositiveIntegerField(null=True)
+    patientId = models.PositiveIntegerField(null=True)
     # Gets the doctorId
     doctorId = models.PositiveIntegerField(null=True)
     # Gets the patientName
