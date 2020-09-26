@@ -15,9 +15,17 @@ def test(request):
 
 # for checking is user is admin
 
+
 def is_admin(user):
     return user.groups.filter(name='ADMIN').exists()
 
+
+# After entering credentials check whether username and password is of admin
+
+
+def afterlogin_view(request):
+    if is_admin(request.user):
+        return redirect('admin-dashboard')
 
 # Create your views here.
 
