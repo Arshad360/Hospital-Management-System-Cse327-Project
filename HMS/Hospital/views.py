@@ -98,7 +98,7 @@ def save_life(request):
 # Define special_case function
 # lower_case
 
-def special_case(request):
+def special_care(request):
     return render(request, 'template/special_case.html')
 
 def about_us_view(request):

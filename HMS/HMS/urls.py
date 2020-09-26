@@ -17,17 +17,29 @@ from xml.etree.ElementInclude import include
 
 from django.contrib import admin
 from django.urls import path
+from HMS.Hospital.views import *
 
 
 
-urlpatterns = [
-    path('admin/',admin.site.urls),
-    path('HMS/', include('HMS.urls'),
-    path('Hospital/', include('Hospital.urls'),
-    path('Template/', include('Template.urls'),
+urlpatterns = {
+    path('admin/', admin.site.urls),
+    path('available_blood_group', available_blood_group),
+    path('blood_bank', blood_bank),
+    path('corona_update', corona_update),
+    path('donate_blood', donate_blood),
+    path('footer', footer),
+    path('home', home),
+    path('home_base', home_base),
+    path('home_slider', home_slider),
+    path('login', login),
+    path('notice',notice),
+    path('special_care',special_care),
+    path('save_life', save_life),
 
-]
 
+
+
+}
 
 
 
