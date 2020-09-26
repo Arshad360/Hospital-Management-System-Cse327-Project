@@ -23,6 +23,11 @@ class Doctor(models.Model):
     def __str__(self):
         return "{} ({})".format(self.user.first_name,self.department)
 
-=======
+    class coronaUpdate(models.Model):
+        title = models.CharField(max_length=40)
+        pub_date = models.DateTimeField()
+        body = models.TextField()
+
+
 
 

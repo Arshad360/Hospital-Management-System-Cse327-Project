@@ -110,4 +110,28 @@ def admin_patient_view(request):
 def admin_appointment_view(request):
     return render(request, 'hospital/admin_appointment.html')
 
+# Define corona_center
+
+def corona_update(request, user = patients, my_admin_group = doctor):
+    form = forms.corona_center()
+    if request.method == 'POST':
+        form = forms.corona_center(request.POST)
+        if form.is_valid():
+            user.save()
+            my_admin_group[0].user_set.add(user)
+            return HttpResponseRedirect('corona_center')
+    return render(request, 'hospital/corona_center.html', {'form': form})
+
+
+# Define corona_center
+
+def diabetes_update(request, user = patients, my_admin_group = doctor):
+    form = forms.diabetes_center()
+    if request.method == 'POST':
+        form = forms.diabetes_center(request.POST)
+        if form.is_valid():
+            user.save()
+            my_admin_group[0].user_set.add(user)
+            return HttpResponseRedirect('diabetes_center')
+    return render(request, 'hospital/diabetes_center.html', {'form': form})
 
