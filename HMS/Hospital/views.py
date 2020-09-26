@@ -156,6 +156,8 @@ def ambulance(request):
         return HttpResponseRedirect('ambulance')
     return render(request, 'template/ambulance.html')
 
+# for Emergency & ICU Services
+
 
 # for contact us
 

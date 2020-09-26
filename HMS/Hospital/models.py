@@ -14,6 +14,7 @@ departments = [('Cardiologist', 'Cardiologist'),
                ('Colon and Rectal Surgeons', 'Colon and Rectal Surgeons')
                ]
 
+
 # Defines of the Appointment Class
 
 
@@ -31,3 +32,17 @@ class Appointment(models.Model):
     # Gets the description
     description = models.TextField(max_length=500)
     status = models.BooleanField(default=False)
+
+
+# Ambulance class define
+class Ambulance(models.Model):
+    title = models.CharField(max_length=40)
+    pub_date = models.DateTimeField()
+    body = models.TextField()
+
+
+# Emergency class define
+class Emergency(models.Model):
+    title = models.CharField(max_length=40)
+    pub_date = models.DateTimeField()
+    body = models.TextField()
