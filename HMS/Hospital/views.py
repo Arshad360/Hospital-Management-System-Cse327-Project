@@ -59,6 +59,9 @@ def admin_signup_view(request):
             return HttpResponseRedirect('adminlogin')
     return render(request, 'hospital/adminsignup.html', {'form': form})
 
+
+# Admin Related Views Start
+
 # Dashboard page view for admin
 
 def admin_dashboard_view(request):
