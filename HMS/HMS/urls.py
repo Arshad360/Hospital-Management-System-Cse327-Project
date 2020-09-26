@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from HMS.Hospital import views
+
 from HMS.Hospital.views import *
 from django.contrib.auth.views import LoginView, LogoutView
 
