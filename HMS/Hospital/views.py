@@ -120,8 +120,6 @@ def admin_add_appointment_view(request):
     return render(request, 'hospital/admin_add_appointment.html', context=mydict)
 
 
-
-
 # for contact us
 
 
