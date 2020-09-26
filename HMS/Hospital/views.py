@@ -83,11 +83,43 @@ def admin_add_patient_view(request):
         return HttpResponseRedirect('admin-view-patient')
     return render(request, 'hospital/admin_add_patient.html', context=my_dict)
 
+
 # after successful login
 
 
 def afterlogin_view(request):
     return render(request, 'hospital/admin-dashboard.html')
+
+
+# APPOINTMENT START
+
+
+def admin_appointment_view(request):
+    return render(request, 'hospital/admin_appointment.html')
+
+
+def admin_view_appointment_view(request):
+    appointments = models.Appointment.objects.all().filter(status=True)
+    return render(request, 'hospital/admin_view_appointment.html', {'appointments': appointments})
+
+
+def admin_add_appointment_view(request):
+    appointment_form = forms.AppointmentForm()
+    mydict = {'appointmentForm': appointment_form, }
+    if request.method == 'POST':
+        appointment_form = forms.AppointmentForm(request.POST)
+        if appointment_form.is_valid():
+            appointment = appointment_form.save(commit=False)
+            appointment.doctorId = request.POST.get('doctorId')
+            appointment.patientId = request.POST.get('patientId')
+            appointment.doctorName = models.User.objects.get(id=request.POST.get('doctorId')).first_name
+            appointment.patientName = models.User.objects.get(id=request.POST.get('patientId')).first_name
+            appointment.status = True
+            appointment.save()
+        return HttpResponseRedirect('admin-view-appointment')
+    return render(request, 'hospital/admin_add_appointment.html', context=mydict)
+
+
 
 
 # for contact us

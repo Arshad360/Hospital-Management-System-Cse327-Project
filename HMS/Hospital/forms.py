@@ -3,7 +3,8 @@ from django.contrib.auth.models import User
 from . import models
 
 
-# for admin
+# Class for admin sign up form
+
 
 class AdminSigupForm(forms.ModelForm):
     class Meta:
@@ -11,42 +12,22 @@ class AdminSigupForm(forms.ModelForm):
         fields = ['first_name', 'last_name', 'username', 'password']
 
 
-# for Doctor related form
-
-class DoctorUserForm(forms.ModelForm):
-    class Meta:
-        model = User
-        fields = ['first_name', 'last_name', 'username', 'password']
+# Class for Appointment form
 
 
-class DoctorForm(forms.ModelForm):
-    class Meta:
-        model = models.Doctor
-        fields = ['address', 'mobile', 'department', 'status']
-
-
-# for Patient related form
-
-class PatientUserForm(forms.ModelForm):
-    class Meta:
-        model = User
-        fields = ['first_name', 'last_name', 'username', 'password']
-
-
-class PatientForm(forms.ModelForm):
-    # this is the extraField for linking patient and their assigned doctor
-    # this will show dropdown __str__ method doctor model is shown on html
-    # to_field_name this will fetch corresponding value  user_id present in Doctor model and return it
-
-    assignedDoctorId = forms.ModelChoiceField(queryset=models.Doctor.objects.all().filter(status=True),
-                                              empty_label="Name and Department", to_field_name="user_id")
+class AppointmentForm(forms.ModelForm):
+    doctorId = forms.ModelChoiceField(queryset=models.Doctor.objects.all().filter(status=True),
+                                      empty_label="Doctor Name and Department", to_field_name="user_id")
+    patientId = forms.ModelChoiceField(queryset=models.Patient.objects.all().filter(status=True),
+                                       empty_label="Patient Name and Symptoms", to_field_name="user_id")
 
     class Meta:
-        model = models.Patient
-        fields = ['address', 'mobile', 'status', 'symptoms']
+        model = models.Appointment
+        fields = ['description', 'status']
 
 
-# for contact us page
+# Class for contact us form
+
 
 class ContactusForm(forms.Form):
     Name = forms.CharField(max_length=30)
