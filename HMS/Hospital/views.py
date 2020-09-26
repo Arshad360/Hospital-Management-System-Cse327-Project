@@ -151,12 +151,20 @@ def admin_add_appointment_view(request):
 
 # for Ambulance Services
 
+
 def ambulance(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('ambulance')
-    return render(request, 'template/ambulance.html')
+    return render(request, 'hospital/ambulance.html')
+
 
 # for Emergency & ICU Services
+
+
+def emergency(request):
+    if request.user.is_authenticated:
+        return HttpResponseRedirect('ambulance')
+    return render(request, 'hospital/emergency.html')
 
 
 # for contact us
