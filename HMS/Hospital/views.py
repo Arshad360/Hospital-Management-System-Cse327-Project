@@ -8,8 +8,15 @@ from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required, user_passes_test
 
 
+# Defines a test function for admin_base page
+
 def test(request):
     return render(request, 'hospital/admin_base.html')
+
+# for checking is user is admin
+
+def is_admin(user):
+    return user.groups.filter(name='ADMIN').exists()
 
 
 # Create your views here.
@@ -17,17 +24,19 @@ def test(request):
 
 def home_view(request):
     if request.user.is_authenticated:
+        # It will redirect to the afterlogin page
         return HttpResponseRedirect('afterlogin')
     return render(request, 'hospital/index.html')
 
 
-# for signup/login button for admin
+
 
 def adminclick_view(request):
     if request.user.is_authenticated:
         return HttpResponseRedirect('afterlogin')
     return render(request, 'hospital/adminclick.html')
 
+# for signup/login button for admin
 
 def admin_signup_view(request):
     form = forms.AdminSigupForm()
@@ -42,22 +51,27 @@ def admin_signup_view(request):
             return HttpResponseRedirect('adminlogin')
     return render(request, 'hospital/adminsignup.html', {'form': form})
 
+# Dashboard page view for admin
 
 def admin_dashboard_view(request):
     return render(request, 'hospital/admin_dashboard.html')
 
+# Checking the doctor for admin
 
 def admin_doctor_view(request):
     return render(request, 'hospital/admin_doctor.html')
 
+# patient view for admin
 
 def admin_patient_view(request):
     return render(request, 'hospital/admin_patient.html')
 
+# Appointment view for the admin
 
 def admin_appointment_view(request):
     return render(request, 'hospital/admin_appointment.html')
 
+# Adding patient view by admin
 
 def admin_add_patient_view(request):
     user_form = forms.PatientUserForm()
@@ -91,7 +105,7 @@ def afterlogin_view(request):
     return render(request, 'hospital/admin-dashboard.html')
 
 
-# APPOINTMENT START
+# APPOINTMENT START. All appointment function define
 
 
 def admin_appointment_view(request):
