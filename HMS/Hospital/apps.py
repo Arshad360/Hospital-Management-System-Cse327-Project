@@ -9,3 +9,25 @@ class loginConfiq(AppConfig):
 
 class PharmacyConfiq(AppConfig):
     name = 'Pharmacy'
+
+class Confiq(AppConfig):
+    name = 'Pharmacy'
+
+class PharmacyConfiq(AppConfig):
+    name = 'Pharmacy'
+
+class PharmacyConfiq(AppConfig):
+    name = 'Pharmacy'
+
+class PharmacyConfiq(AppConfig):
+    name = 'Pharmacy'
+
+class PharmacyConfiq(AppConfig):
+    name = 'Pharmacy'
+
+class PharmacyConfiq(AppConfig):
+    name = 'Pharmacy'
+
+class PharmacyConfiq(AppConfig):
+    name = 'Pharmacy'
+

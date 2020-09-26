@@ -18,8 +18,16 @@ from xml.etree.ElementInclude import include
 from django.contrib import admin
 from django.urls import path
 
-urlpatterns = {
-    path('admin/', admin.site.urls),
-    path('Hospital/', include('Hospital.urls'))
 
-}
+
+urlpatterns = [
+    path('admin/',admin.site.urls),
+    path('HMS/', include('HMS.urls'),
+    path('Hospital/', include('Hospital.urls'),
+    path('Template/', include('Template.urls'),
+
+]
+
+
+
+

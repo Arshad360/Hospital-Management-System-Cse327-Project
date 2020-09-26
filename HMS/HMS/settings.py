@@ -31,14 +31,30 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'blog.apps.loginConfiq',
-    'blog.apps.PharmacyConfiq',
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+     #All_Confiq
+
+     'blog.apps.loginConfiq',
+     'blog.apps.PharmacyConfiq',
+     'blog.apps.availablebloodgroupConfiq',
+     'blog.apps.bloodbankConfiq',
+     'blog.apps.coranaConfiq',
+     'blog.apps.donatebloodConfiq',
+     'blog.apps.footerConfiq',
+     'blog.apps.homeConfiq',
+     'blog.apps.homesliderConfiq',
+     'blog.apps.homebaseConfiq',
+     'blog.apps.loginConfiq',
+     'blog.apps.navbarConfiq',
+     'blog.apps.noticeConfiq',
+     'blog.apps.savelifeConfiq',
+     'blog.apps.specialcareConfiq',
+
+     'django.contrib.admin',
+     'django.contrib.auth',
+     'django.contrib.contenttypes',
+     'django.contrib.sessions',
+     'django.contrib.messages',
+     'django.contrib.staticfiles',
 ]
 
 MIDDLEWARE = [
