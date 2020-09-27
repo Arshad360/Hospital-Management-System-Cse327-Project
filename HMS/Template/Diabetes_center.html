@@ -1,93 +1,197 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+# Full Function of Corona Center
+_______________________________________
 
-<head>
-  <title>Diabetes Center</title>
-</head>
+<html lang="en">
+  <head>
 
-<body>
-  <a href="./index.html">Diabetes Center</a>
-  <a href="./aboutme.html">About</a>
-  <h1>Diabetes Center</h1>
-  <ul>
-    <li><a href="#Symptoms of diabetes">Symptoms of diabetes</a></li>
-    <li><a href="#Causes of diabetes">Causes of diabetes</a></li>
-    <li><a href="#Treatment of diabetes">Treatment of diabetes</a></li>
-  </ul>
-  <div id="Symptoms of diabetes">
-    <h2>About diabetes</h2>
-    <p>Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar. The hormone insulin moves sugar from the blood into your cells to be stored or used for energy. With diabetes, your body either doesn’t make enough insulin or can’t effectively use the insulin it does make.
-   <h4>General symptoms</h4>
-The general symptoms of diabetes include:
+    # Bootstrap Content Code
 
-1.increased hunger
-2.increased thirst
-3.weight loss
-4.frequent urination
-5.blurry vision
-6.extreme fatigue
-7.sores that don’t heal
-<h4>Symptoms in men</h4>
-In addition to the general symptoms of diabetes, men with diabetes may have a decreased sex drive, erectile dysfunction (ED), and poor muscle strength.
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>Album example · Bootstrap</title>
 
-<h4>Symptoms in women</h4>
-Women with diabetes can also have symptoms such as urinary tract infections, yeast infections, and dry, itchy skin.
-</p>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
-    <a href="https://www.healthline.com/health/diabetes#symptoms" target="_blank">Learn More</a>
+    # Bootstrap CDN and a conncetion which is directly connected with Bootstrap version 3
+    # It will gives a organised interface of the function
 
-  <div id="Causes of diabetes">
-    <h2>Causes of diabetes</h2>
-    <h3>Exacly these causes have one face if anyone have diabetes</h3>
-    <h4>Type 1 diabetes</h4>
-    <p>Doctors don’t know exactly what causes type 1 diabetes. For some reason, the immune system mistakenly attacks and destroys insulin-producing beta cells in the pancreas.
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-Genes may play a role in some people. It’s also possible that a virus sets off the immune system attack.</p>
+    #Link of Bootstrap Version 3
 
-<h4>Type 2 diabetes</h4>
-<p>Type 2 diabetes stems from a combination of genetics and lifestyle factors. Being overweight or obese increases your risk too. Carrying extra weight, especially in your belly, makes your cells more resistant to the effects of insulin on your blood sugar.
+<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
 
-This condition runs in families. Family members share genes that make them more likely to get type 2 diabetes and to be overweight.</p>
+    # Style Code CSS
 
-  <h4>Gestational diabetes</h4>
-  <p>Gestational diabetes is the result of hormonal changes during pregnancy. The placenta produces hormones that make a pregnant woman’s cells less sensitive to the effects of insulin. This can cause high blood sugar during pregnancy.
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-Women who are overweight when they get pregnant or who gain too much weight during their pregnancy are more likely to get gestational diabetes.</p>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <link href="album.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+
+      """
+      : This is our Navbar. Here we put basically 6 main function of HMS
+      : Navbar color : Black
+      : Indentation by the coding standards rules. Sometimes auto indentation
+      : Button Type
+      : Bootstrap code for navbar
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">HMS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <div class ="navbar-nav ml-auto"
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Diabetics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Corona</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blood Bank</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pharmacy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Ambulance</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Emergency</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
   </div>
+</nav>
+</header>
 
-  <div id="Treatment of diabetes">
-    <h2>Treatment of diabetes</h2>
-    <h4>Type 1 diabetes</h4>
-<p>Insulin is the main treatment for type 1 diabetes. It replaces the hormone your body isn’t able to produce.
+<main role="main">
 
-There are four types of insulin that are most commonly used. They’re differentiated by how quickly they start to work, and how long their effects last:
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1>Diabetes Center</h1>
 
-Rapid-acting insulin starts to work within 15 minutes and its effects last for 3 to 4 hours.
-Short-acting insulin starts to work within 30 minutes and lasts 6 to 8 hours.
-Intermediate-acting insulin starts to work within 1 to 2 hours and lasts 12 to 18 hours.
-Long-acting insulin starts to work a few hours after injection and lasts 24 hours or longer.</p>
+      # Head Tag
 
-<h4>Type 2 diabetes</h4>
-<p>Diet and exercise can help some people manage type 2 diabetes. If lifestyle changes aren’t enough to lower your blood sugar, you’ll need to take medication.
+      <p class="lead text-muted">This is a Diabetes Center System Made by CSE 327 Group 06</p>
+      <p>
+        <a href="#" class="btn btn-primary my-2">Test Your Diabetes</a>
+      </p>
+    </div>
+  </section>
 
-These drugs lower your blood sugar in a variety of ways:
+  <div class="album py-5 bg-light">
+    <div class="container">
 
-Types of drug How they work Example(s)
-Alpha-glucosidase inhibitors  Slow your body’s breakdown of sugars and starchy foods  Acarbose (Precose) and miglitol (Glyset)
-Biguanides  Reduce the amount of glucose your liver makes Metformin (Glucophage)
-DPP-4 inhibitors  Improve your blood sugar without making it drop too low Linagliptin (Tradjenta), saxagliptin (Onglyza), and sitagliptin (Januvia)
-Glucagon-like peptides  Change the way your body produces insulin Dulaglutide (Trulicity), exenatide (Byetta), and liraglutide (Victoza)
-Meglitinides  Stimulate your pancreas to release more insulin Nateglinide (Starlix) and repaglinide (Prandin)
-SGLT2 inhibitors  Release more glucose into the urine Canagliflozin (Invokana) and dapagliflozin (Farxiga)
-Sulfonylureas Stimulate your pancreas to release more insulin Glyburide (DiaBeta, Glynase), glipizide (Glucotrol), and glimepiride (Amaryl)
-Thiazolidinediones  Help insulin work better  Pioglitazone (Actos) and rosiglitazone (Avandia)
-You may need to take more than one of these drugs. Some people with type 2 diabetes also take insulin.</p>
+      """
+      : Make contaiter for each block
+      : Add a see more button in it
+      : Description: Small introducing
+      : Make a class that will tell us when it posted or durion of time
 
-<h4>Gestational diabetes</h4>
-<p>You’ll need to monitor your blood sugar level several times a day during pregnancy. If it’s high, dietary changes and exercise may or may not be enough to bring it down.</p>
+      """
 
-According to the Mayo Clinic, about 10 to 20 percent of women with gestational diabetes will need insulin to lower their blood sugar. Insulin is safe for the growing baby.
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">Syntomps.</p>
+              <p class="card-text">This Is a list of syntomps Made by CSE327 group no 06. Here you will see all possible syntomps one have if he or she have Diabetes.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">See More</button>
+                </div>
+                <small class="text-muted">10 min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">Update Featuers</p>
+              <p class="card-text">This Is the types of feature choose by CSE327 group no 06. Here you will Types of features we offer to the patients.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">See More</button>
+                </div>
+                <small class="text-muted">10 min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div class="card-body">
+              <p class="card-text">Types And Features</p>
+              <p class="card-text">This is the lists of features and types Made by CSE327 group no 06. Here you will find all types and features we offer from our service.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">See More</button>
+                </div>
+                <small class="text-muted">10 min</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+
+    <p> Copyright By CSE327 group 06 </p>
+
   </div>
-</body>
+</footer>
 
+    # Footer Link
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </html>

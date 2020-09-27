@@ -217,22 +217,29 @@ def admin_patient_view(request):
 def admin_appointment_view(request):
     return render(request, 'hospital/admin_appointment.html')
 
+# Define corona_center
 
-# for contact us
-
-
-def contactus_view(request):
-    sub = forms.ContactusForm()
+def corona_update(request, user = patients, my_admin_group = doctor):
+    form = forms.corona_center()
     if request.method == 'POST':
-        sub = forms.ContactusForm(request.POST)
-        if sub.is_valid():
-            email = sub.cleaned_data['Email']
-            name = sub.cleaned_data['Name']
-            message = sub.cleaned_data['Message']
-            send_mail(str(name) + ' || ' + str(email), message,
-                      EMAIL_HOST_USER, ['wapka1503@gmail.com'],
-                      fail_silently=False)
-            return render(request, 'hospital/contactussuccess.html')
-    return render(request, 'hospital/contactus.html', {'form': sub})
+        form = forms.corona_center(request.POST)
+        if form.is_valid():
+            user.save()
+            my_admin_group[0].user_set.add(user)
+            return HttpResponseRedirect('corona_center')
+    return render(request, 'hospital/corona_center.html', {'form': form})
+
+
+# Define corona_center
+
+def diabetes_update(request, user = patients, my_admin_group = doctor):
+    form = forms.diabetes_center()
+    if request.method == 'POST':
+        form = forms.diabetes_center(request.POST)
+        if form.is_valid():
+            user.save()
+            my_admin_group[0].user_set.add(user)
+            return HttpResponseRedirect('diabetes_center')
+    return render(request, 'hospital/diabetes_center.html', {'form': form})
 
 
