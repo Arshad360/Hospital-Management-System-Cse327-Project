@@ -23,11 +23,13 @@ class Doctor(models.Model):
     def __str__(self):
         return "{} ({})".format(self.user.first_name,self.department)
 
+    # corona class define
     class coronacenter(models.Model):
         title = models.CharField(max_length=40)
         pub_date = models.DateTimeField()
         body = models.TextField()
 
+    # diabetes class define
     class diabetescenter(models.Model):
         title = models.CharField(max_length=40)
         pub_date = models.DateTimeField()
