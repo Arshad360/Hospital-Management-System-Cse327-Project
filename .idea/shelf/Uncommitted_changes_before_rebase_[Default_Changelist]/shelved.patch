@@ -1,0 +1,24 @@
+Index: HMS/template/hospital/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% extends 'hospital/homebase.html' %}\r\n{% load static %}\r\n\r\n{% block content %}\r\n\r\n\r\n<head>\r\n  <style media=\"screen\">\r\n    .jumbotron {\r\n      margin-top: 0px;\r\n      margin-bottom: 0px;\r\n      background-image: url('{% static \"images/bg.jpg\" %}');\r\n      background-size: cover;\r\n      background-repeat: no-repeat;\r\n    }\r\n\r\n    .jumbotron h5,\r\n    h3 {\r\n      text-align: center;\r\n    }\r\n\r\n\r\n    .alert {\r\n      margin: 0px;\r\n    }\r\n\r\n\r\n\r\n    .glow {\r\n      font-size: 50px;\r\n      color: white;\r\n      text-align: center;\r\n      -webkit-animation: glow 1s ease-in-out infinite alternate;\r\n      -moz-animation: glow 1s ease-in-out infinite alternate;\r\n      animation: glow 1s ease-in-out infinite alternate;\r\n    }\r\n\r\n    @-webkit-keyframes glow {\r\n      from {\r\n        text-shadow: 0 0 10px #eeeeee, 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #9554b3, 0 0 60px #9554b3, 0 0 70px #9554b3;\r\n      }\r\n\r\n      to {\r\n        text-shadow: 0 0 20px #eeeeee, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;\r\n      }\r\n    }\r\n  </style>\r\n</head>\r\n<br>\r\n<br>\r\n\r\n\r\n\r\n\r\n{% endblock content %}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- HMS/template/hospital/index.html	(revision 9590d2e41fd8f97fb5db7648fbec1b49443a672f)
++++ HMS/template/hospital/index.html	(date 1600968397346)
+@@ -19,7 +19,6 @@
+       text-align: center;
+     }
+ 
+-
+     .alert {
+       margin: 0px;
+     }
+@@ -50,6 +49,4 @@
+ <br>
+ 
+ 
+-
+-
+ {% endblock content %}
