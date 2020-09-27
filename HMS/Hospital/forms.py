@@ -3,7 +3,31 @@ from django.contrib.auth.models import User
 from . import models
 
 
-# for contact us page
+# Class for admin sign up form
+
+
+class AdminSigupForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['first_name', 'last_name', 'username', 'password']
+
+
+# Class for Appointment form
+
+
+class AppointmentForm(forms.ModelForm):
+    doctorId = forms.ModelChoiceField(queryset=models.Doctor.objects.all().filter(status=True),
+                                      empty_label="Doctor Name and Department", to_field_name="user_id")
+    patientId = forms.ModelChoiceField(queryset=models.Patient.objects.all().filter(status=True),
+                                       empty_label="Patient Name and Symptoms", to_field_name="user_id")
+
+    class Meta:
+        model = models.Appointment
+        fields = ['description', 'status']
+
+
+# Class for contact us form
+
 
 class ContactusForm(forms.Form):
     Name = forms.CharField(max_length=30)

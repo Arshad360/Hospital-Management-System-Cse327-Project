@@ -1,5 +1,53 @@
 from django.db import models
 
+
+from django.contrib.auth.models import User
+
+# Create your models here
+
+# All the departments
+
+departments = [('Cardiologist', 'Cardiologist'),
+               ('Dermatologists', 'Dermatologists'),
+               ('Emergency Medicine Specialists', 'Emergency Medicine Specialists'),
+               ('Allergists/Immunologists', 'Allergists/Immunologists'),
+               ('Anesthesiologists', 'Anesthesiologists'),
+               ('Colon and Rectal Surgeons', 'Colon and Rectal Surgeons')
+               ]
+
+
+# Defines of the Appointment Class
+
+
+class Appointment(models.Model):
+    # Gets the patientId
+    patientId = models.PositiveIntegerField(null=True)
+    # Gets the doctorId
+    doctorId = models.PositiveIntegerField(null=True)
+    # Gets the patientName
+    patientName = models.CharField(max_length=40, null=True)
+    # Gets the doctorName
+    doctorName = models.CharField(max_length=40, null=True)
+    # Gets the appointmentDate
+    appointmentDate = models.DateField(auto_now=True)
+    # Gets the description
+    description = models.TextField(max_length=500)
+    status = models.BooleanField(default=False)
+
+
+# Ambulance class define
+class Ambulance(models.Model):
+    title = models.CharField(max_length=40)
+    pub_date = models.DateTimeField()
+    body = models.TextField()
+
+
+# Emergency class define
+class Emergency(models.Model):
+    title = models.CharField(max_length=40)
+    pub_date = models.DateTimeField()
+    body = models.TextField()
+=======
 """"
 :Title = CharField
 :Maxlength = 40
@@ -120,7 +168,17 @@ class Doctor(models.Model):
     def __str__(self):
         return "{} ({})".format(self.user.first_name,self.department)
 
-=======
+    # corona class define
+    class coronacenter(models.Model):
+        title = models.CharField(max_length=40)
+        pub_date = models.DateTimeField()
+        body = models.TextField()
+
+    # diabetes class define
+    class diabetescenter(models.Model):
+        title = models.CharField(max_length=40)
+        pub_date = models.DateTimeField()
+        body = models.TextField()
 
 
 
